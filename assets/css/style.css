@@ -1,0 +1,55 @@
+:root{
+    --wine: #5F0F40;
+    --orange: #FB8B24;
+    --dark-orange: #E36414;
+    --dark-red: #9A031E;
+}
+
+body{
+    background-color: #5F0F40;
+    font-family: 'Work Sans', sans-serif;;
+}
+
+#mainNav .navbar-nav {
+    color: var(--dark-orange);
+    font-weight: 500;
+    word-spacing: 50%;
+    
+}
+
+#mainNav .navbar-nav:hover{
+    color: var(--dark-red);
+}
+
+h1{
+    font-family: 'Work Sans', sans-serif;
+}
+
+a{
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--dark-orange);
+}
+
+.main-banner{
+    padding-top: 3%;
+    
+}
+
+.card-img{
+
+}
+
+h2 {
+    color: var(--orange);
+    text-align: center;
+    padding: 3%;
+}
+
+footer{
+    text-align: center;
+    color: var(--orange);
+}
