@@ -70,12 +70,12 @@
     </div>
 
     <!-- image of receipe row 1 -->
-    <div class="container px-4 py-5" id="custom-cards"></div> <!-- page break -->
+    <!-- <div class="container px-4 py-5" id="custom-cards"></div> page break
 
-    <div class="row align-items-md-stretch"> <!-- change the width of the boxes to align with row of 3 boxes -->
-        <div class="col-md-6">
+    <div class="row align-items-md"> change the width of the boxes to align with row of 3 boxes -->
+        <!-- <div class="col-md-6">
             <div class="h-100 p-5 text-bg-dark rounded-3">
-                <h2>Change the background</h2>
+                <h2>Left</h2>
                 <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look.
                     Then, mix and match with additional component themes and more.</p>
                 <button class="btn btn-outline-light" type="button">Example button</button>
@@ -83,27 +83,87 @@
         </div>
         <div class="col-md-6">
             <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                <h2>Add borders</h2>
+                <h2>Right</h2>
                 <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be
                     sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of
                     both column's content for equal-height.</p>
                 <button class="btn btn-outline-secondary" type="button">Example button</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="container px-4 py-5" id="custom-cards">
+    <div class="container px-4" id="custom-cards">
+
+        <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Earth</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3" />
+                                </svg>
+                                <small>3d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('unsplash-photo-2.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to
+                            multiple
+                            lines
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Pakistan</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3" />
+                                </svg>
+                                <small>4d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container px-4" id="custom-cards">
 
 
         <!-- image of receipe row 2 -->
-        <div class="container px-4 py-5" id="custom-cards">
+        <div class="container px-4 mt-4" id="custom-cards">
 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
                         style="background-image: url('unsplash-photo-1.jpg');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
                                     <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
