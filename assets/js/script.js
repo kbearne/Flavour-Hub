@@ -1,11 +1,9 @@
-// global variable - page elements
-//const recipeImagesContainer = document.querySelector('.recipe-images-container');
-//const checkboxesContainer = document.querySelector('.checkboxes-container');
+// Get the recipes container
+const recipesContainer = document.getElementById('recipes-container');
 
 // search bar
 const searchBar = document.querySelector('.form-control.mr-sm-2');
 
-// recipe images (get recipe title for Spoonacular API call)
 
 // search history local storage on browser 
 //let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
@@ -46,6 +44,7 @@ searchBar.addEventListener('keydown', function (event) {
     };
 });
 
+
 // update search history (utilising local storage)
 function updateSearchHistory(searchQuery) {
     localStorageArray.push(searchQuery);
@@ -56,6 +55,7 @@ function updateSearchHistory(searchQuery) {
     // refresh search history
     loadSearchHistory();
 };
+
 
 /*
 // load the search history from local storage
@@ -76,6 +76,7 @@ function loadSearchHistory() {
     populateDropdown();
 }*/
 
+
 // autopopulate dropdown with previous search history which is clickable (makes API calls to Spoonacular)
 function populateDropdown() {
     const dropdown = document.getElementById('search-history-dropdown');
@@ -93,6 +94,7 @@ function populateDropdown() {
         });
     });
 }
+
 
 // API call to Spoonacular which pulls associated recipe information based on user input
 function getRecipeInformation(searchQuery) {
@@ -129,17 +131,16 @@ function populateRecipeInformation() {
         // Pass API results to the displayRecipeInfo function
         .then(function (data) {
             displayRecipeInfo(data.results);
+            console.log(data.results);
         })
         .catch(function (error) {
             console.error('API fetch operation has failed with the following error:', error);
         });
 };
 
+
 // Display recipe information on the page
 function displayRecipeInfo(recipes) {
-    // Get the recipes container
-    const recipesContainer = document.getElementById('recipes-container');
-
     // Loop recipes and dynamically create card elements
     recipes.forEach(function (recipe) {
         // Create the card container
@@ -165,21 +166,16 @@ function displayRecipeInfo(recipes) {
         title.className = 'card-title';
         title.textContent = recipe.title;
 
-        // Create the text elements
-        const text = document.createElement('p');
-        text.className = 'card-text';
-        text.textContent = 'Recipe description goes here.';
-
         // Create the button elements
         const button = document.createElement('a');
-        button.href = '#'; // Add the actual link if available
+        button.href = `recipeinfo.html?id=${recipe.id}`;
         button.className = 'btn btn-primary';
         button.target = '_blank';
         button.textContent = 'View recipe details';
+        button.dataset.recipeId = recipe.id;
 
         // Append all elements
         cardBody.appendChild(title);
-        cardBody.appendChild(text);
         cardBody.appendChild(button);
 
         // Append elements to the card
@@ -192,10 +188,21 @@ function displayRecipeInfo(recipes) {
         // Append the card container to the recipes container
         recipesContainer.appendChild(cardContainer);
     });
-}
+};
 
-// call the
 populateRecipeInformation();
+
+
+// Event listener for when a user clicks to on the 'View recipe details' button
+recipesContainer.addEventListener('click', function (event) {
+    if (event.target.classList.contains('btn-primary')) {
+        const recipeId = event.target.dataset.recipeId;
+
+        // Launch recipeinfo.html in a new tab, sending the recipe ID
+        window.open(`./assets/html/recipeinfo.html?id=${recipeId}`, '_blank');
+    }
+});
+
 
 // event listener for when user selects a checkbox next to recipe ingredient for further nutritional information
 // needs to call getNutritionalInformation function
@@ -207,6 +214,7 @@ populateRecipeInformation();
 //       }
 //   }
 // });
+
 
 // Edamam API call which pulls associated nutritional information for the selected recipe ingredient
 // item name, calories, total weight, diet labels
