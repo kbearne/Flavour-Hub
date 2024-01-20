@@ -66,7 +66,7 @@ h6 {
 }
 
 .jumbotron {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/Images/stock-images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/stock-images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,7 +88,11 @@ h6 {
 
 .lead {
     color: rgb(238, 238, 238);
-    background-color: #636367;
+    text-shadow: 1px 1px #000000;
+}
+
+.banner-about {
+    background-color: rgba(55, 55, 55, 0.5);
 }
 
 
