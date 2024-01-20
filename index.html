@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Stylesheets for Favicon -->
-    <!-- TODO replace with food favicon -->
+    <!-- TODO replace with food favicon
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+    <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest"> -->
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                 </ul>
                 <!-- Recipe search bar aligned to the right -->
                 <form class="form-inline my-2 my-lg-0 ml-auto">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search for a recipe"
+                    <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search for a recipe"
                         aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
@@ -67,66 +67,12 @@
     </div>
 
     <!-- Recipes showcase section  -->
-    <!-- Bootstrap cards code provided by Bootcamp materials: 03-UX-BOOTSTRAP-MODULE > 02-bootstrap-lesson > activities > 03-Stu-Cards -->
     <div class="container-fluid">
-        <h2 class="sectionHeading" id="recipes" style="text-align:center; padding-bottom: 10px;">Discover new recipes
-        </h2>
-        <div class="row">
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-                <div class="card">
-                    <img src="./assets/images/placeholder-image.jpeg" class="card-img-top"
-                        alt="Screenshot of the Portfolio deployed application">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe placeholder</h5>
-                        <p class="card-text">This project fullfils the criteria of building an effective portfolio to
-                            highlight my strongest work, which I will continue to add to.</p>
-                        <a href="#" class="btn btn-primary" target="_blank">View recipe details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-                <div class="card">
-                    <img src="./assets/images/placeholder-image.jpeg" class="card-img-top"
-                        alt="Screenshot of the Horiseon Code Refactor deployed application">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe placeholder</h5>
-                        <p class="card-text">This project fulfils the criteria of refactoring a codebase to follow
-                            accessibility standards in order to optimise a site for search engines.</p>
-                        <a href="#" class="btn btn-primary" target="_blank">View recipe details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-                <div class="card">
-                    <img src="./assets/images/placeholder-image.jpeg" class="card-img-top" alt="Placeholder image">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe placeholder</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus elit
-                            eget mi placerat euismod. Proin elementum dapibus mauris, id tristique ante molestie non.
-                        </p>
-                        <a href="#" class="btn btn-primary" target="_blank">View recipe
-                            details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-                <div class="card">
-                    <img src="./assets/images/placeholder-image.jpeg" class="card-img-top" alt="Placeholder image">
-                    <div class="card-body">
-                        <h5 class="card-title">Recipe placeholder</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus elit
-                            eget mi placerat euismod. Proin elementum dapibus mauris, id tristique ante molestie non.
-                        </p>
-                        <a href="#" class="btn btn-primary" target="_blank">View recipe
-                            details</a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Close row -->
-    </div><!-- Close container fluid -->
+        <h2 class="sectionHeading" id="recipes" style="text-align:center; padding-bottom: 10px;">Discover new recipes</h2>
+        <div id="recipes-container" class="row">
+            <!-- Recipe cards will be dynamically added here -->
+        </div>
+    </div>
 
     <!-- Skills section -->
     <div class="jumbotron jumbotron-fluid text-center">
@@ -174,6 +120,7 @@
     </footer>
 
     <!-- Bootstrap JS -->
+    <script src="./assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
