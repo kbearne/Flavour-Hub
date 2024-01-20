@@ -1,55 +1,137 @@
-:root{
-    --wine: #5F0F40;
-    --orange: #FB8B24;
-    --dark-orange: #E36414;
-    --dark-red: #9A031E;
+/* Global variables (colour) styling */
+:root {
+    --white: #FFFFFF;
+    --darkgrey: #2E3138;
+    --medgrey: #6C6F7D;
+    --olive: #A5B452;
+    --medgreen: #C8D96F;
+    --lightgreen: #C4F7A1;
+    --black: #000000;
 }
 
-body{
-    background-color: #5F0F40;
-    font-family: 'Work Sans', sans-serif;;
+/* Root page elements styling */
+* {
+    box-sizing: border-box;
 }
 
-#mainNav .navbar-nav {
-    color: var(--dark-orange);
-    font-weight: 500;
-    word-spacing: 50%;
-    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--white);
 }
 
-#mainNav .navbar-nav:hover{
-    color: var(--dark-red);
+p {
+    margin: 0;
 }
 
-h1{
-    font-family: 'Work Sans', sans-serif;
-}
-
-a{
-    color: var(--orange);
+/* Link styling */
+a {
+    color: white;
     text-decoration: none;
 }
 
-a:hover{
-    color: var(--dark-orange);
+a:hover {
+    color: var(--lightgreen);
 }
 
-.main-banner{
-    padding-top: 3%;
-    
+ul a:hover {
+    text-decoration: none;
 }
 
-.card-img{
-
+/* Typography styling */
+h1 {
+    font-size: 45px;
+    margin: 0px 0px;
+    color: var(--olive);
 }
 
 h2 {
-    color: var(--orange);
-    text-align: center;
-    padding: 3%;
+    font-size: 35px;
+    margin: 0px 0px;
+    color: var(--olive);
 }
 
-footer{
+h3 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0px 0px;
+}
+
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.subHeading {
     text-align: center;
-    color: var(--orange);
+    border-bottom: 6px solid var(--medgrey);
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* Navigiation styling */
+nav a:hover {
+    background-color: var(--olive);
+    color: var(--darkgrey);
+    text-decoration: none;
+}
+
+/* Cards styling*/
+.cardContainer {
+    margin-bottom: 15px;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+/* Applies box shadow to all buttons upon hover */
+.btn:hover {
+    box-shadow: 0 4px 6px rgba(128, 128, 128, 0.3);
+}
+
+/* Footer / Contact section styling */
+/* Utilises Flex for positioning */
+footer {
+    background-color: var(--darkgrey);
+    width: 100%;
+    margin-top: 10px;
+}
+
+#footerItems {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    height: 75px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Prefixes the GitHub logo to GitHub link */
+/* Logo downloaded from: https://github.com/logos and utilised as per the provided guidelines */
+.logo-github::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../images/github-mark-white.png") no-repeat center center;
+    background-size: contain;
 }
