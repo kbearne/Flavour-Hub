@@ -65,6 +65,16 @@ h6 {
     margin: 0;
 }
 
+.jumbotron {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/Images/stock-images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 15%;
+}
+
 .subHeading {
     text-align: center;
     border-bottom: 6px solid var(--medgrey);
@@ -72,7 +82,17 @@ h6 {
     margin: 20px auto;
 }
 
-/* Navigiation styling */
+.display-4, .sectionHeading {
+    text-shadow: 2px 2px #000000;
+}
+
+.lead {
+    color: rgb(238, 238, 238);
+    background-color: #636367;
+}
+
+
+/* Navigation styling */
 nav a:hover {
     background-color: var(--olive);
     color: var(--darkgrey);
