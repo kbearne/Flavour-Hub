@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe information</title>
+    <title>Detailed recipe information</title>
+
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -15,8 +16,45 @@
 </head>
 
 <body>
+    <!-- Header / Navigation section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recipes">Discover new recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footerItems">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- Display detailed recipe information (dynamically populated via JavaScript) -->
-    <div id="recipe-details-container">
+    <div class="container-fluid">
+        <h2 class="sectionHeading" id="recipes" style="text-align:center; padding-bottom: 10px;">Detailed recipe
+            information</h2>
+        <div id="recipe-container">
+            <h1 id="recipe-title"></h1>
+            <img id="recipe-image" alt="Recipe Image">
+            <p id="recipe-summary"></p>
+
+            <h2>Ingredients:</h2>
+            <p id="ingredients-list"></p>
+
+            <h2>Steps:</h2>
+            <ul id="steps-list"></ul>
+        </div>
+    </div>
     </div>
 
     <!-- Bootstrap JS -->

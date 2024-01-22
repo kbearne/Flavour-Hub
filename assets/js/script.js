@@ -6,8 +6,8 @@ const searchBar = document.querySelector('.form-control.mr-sm-2');
 
 
 // search history local storage on browser 
-//let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
-//loadSearchHistory();
+let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
+
 
 
 // // event listener for when user clicks a recipe picture
@@ -56,13 +56,15 @@ function updateSearchHistory(searchQuery) {
     loadSearchHistory();
 };
 
-
-/*
+// NEED TO ADD CLASS TO HTML 
 // load the search history from local storage
+
+
 function loadSearchHistory() {
     localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
     // search history on browser
+    // IF THERE IS A HISTORY _ DO THIS ACTION //// IF SERACH HISTORY LIST IS BLANK _ BREAK////ALWAYS REQUIRE ONE SEARCH HISTORY TERM 
     const historyList = document.getElementById('search-history-list');
     historyList.innerHTML = "";
 
@@ -74,7 +76,7 @@ function loadSearchHistory() {
 
     // Dropdown 
     populateDropdown();
-}*/
+}
 
 
 // autopopulate dropdown with previous search history which is clickable (makes API calls to Spoonacular)
@@ -119,7 +121,7 @@ function populateRecipeInformation() {
     // API credentials
     const apiKey = "c2e2b5d0cebd4e64b88e6bfcaa201518";
     // NEEDS CHANGING TO SEARCH BAR INPUT / LOCAL STORAGE ITEMS
-    const searchQuery = "egg";
+    const searchQuery = "bread";
 
     const queryURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
 
