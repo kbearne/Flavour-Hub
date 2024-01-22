@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Roboto
-- Font Author: Copyright 2011 Google Inc. All Rights Reserved.
-- Font Source: http://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf
-- Font License: Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html))
+- Font Title: Jockey One
+- Font Author: Copyright (c) 2011, Copyright (c) 2011, TypeTogether (www.type-together.com info@type-together.com), with Reserved Font Names "Jockey" and "Jockey One"
+- Font Source: http://fonts.gstatic.com/s/jockeyone/v21/HTxpL2g2KjCFj4x8WI6ArIb7HYOk4xc.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

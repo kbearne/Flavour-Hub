@@ -83,16 +83,19 @@ h6 {
 }
 
 .display-4, .sectionHeading {
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #272727;
 }
 
 .lead {
     color: rgb(238, 238, 238);
     text-shadow: 1px 1px #000000;
+    background-color: rgba(34, 34, 34, 0.4);
 }
 
-.banner-about {
-    background-color: rgba(55, 55, 55, 0.5);
+#recipes {
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -157,5 +160,26 @@ footer a {
     height: 20px;
     margin-right: 5px;
     background: url("../Images/github-mark-white.png") no-repeat center center;
+    background-size: contain;
+}
+
+/*Add logos to links down below*/
+.logo-spoonacular::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../Images/spoonacular-logo-b.svg") no-repeat center center;
+    background-size: contain;
+}
+
+.logo-edamam::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../Images/small-logo.png") no-repeat center center;
     background-size: contain;
 }
