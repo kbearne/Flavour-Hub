@@ -1,11 +1,11 @@
 /* Global variables (colour) styling */
 :root {
     --white: #FFFFFF;
-    --darkgrey: #2E3138;
-    --medgrey: #6C6F7D;
-    --olive: #A5B452;
-    --medgreen: #C8D96F;
-    --lightgreen: #C4F7A1;
+    --darkgreen: #386641;
+    --green: #6A994E;
+    --lightgreen: #A7C957;
+    --beige: #F2E8CF;
+    --brickred: #9b3a3c;
     --black: #000000;
 }
 
@@ -19,7 +19,7 @@ body {
     padding: 0;
     font-family: 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
-    background-color: var(--white);
+    background-color: var(--beige);
 }
 
 p {
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: var(--lightgreen);
+    color: var(--beige);
 }
 
 ul a:hover {
@@ -44,27 +44,16 @@ ul a:hover {
 h1 {
     font-size: 45px;
     margin: 0px 0px;
-    color: var(--olive);
+    color: var(--lightgreen);
 }
 
 h2 {
     font-size: 35px;
     margin: 0px 0px;
-    color: var(--olive);
+    color: var(--green);
 }
 
-h3 {
-    font-size: 25px;
-    font-weight: 300;
-    margin: 0px 0px;
-}
-
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
+/*header styling*/
 .jumbotron {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/stock-images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg);
     height: 50%;
@@ -75,15 +64,12 @@ h6 {
     padding: 15%;
 }
 
-.subHeading {
-    text-align: center;
-    border-bottom: 6px solid var(--medgrey);
-    width: 200px;
-    margin: 20px auto;
+.display-4 {
+    text-shadow: 2px 2px #272727;
 }
 
-.display-4, .sectionHeading {
-    text-shadow: 2px 2px #272727;
+.sectionHeading {
+    text-shadow: 2px 2px #111d10;
 }
 
 .lead {
@@ -92,18 +78,25 @@ h6 {
     background-color: rgba(34, 34, 34, 0.4);
 }
 
+
+/* Content Styling */
 #recipes {
     text-align: center;
     padding: 30px;
     padding-bottom: 50px;
 }
 
+#ingredients-list {
 
+}
+
+#steps-list {
+
+}
 /* Navigation styling */
 nav a:hover {
-    background-color: var(--olive);
-    color: var(--darkgrey);
-    text-decoration: none;
+    background-color: var(--lightgreen);
+    text-shadow: 0 0 3px var(--beige);
 }
 
 /* Cards styling*/
@@ -123,7 +116,7 @@ nav a:hover {
 /* Footer / Contact section styling */
 /* Utilises Flex for positioning */
 footer {
-    background-color: var(--darkgrey);
+    background-color: var(--brickred);
     width: 100%;
     margin-top: 10px;
 }
@@ -138,6 +131,7 @@ footer {
     justify-content: space-evenly;
     margin: 0 auto;
     height: 75px;
+    font-size: 18px;
 }
 
 footer ul {
@@ -156,8 +150,7 @@ footer a {
     color: white;
 }
 
-/* Prefixes the GitHub logo to GitHub link */
-/* Logo downloaded from: https://github.com/logos and utilised as per the provided guidelines */
+/* Prefixes the logo to the link */
 .logo-github::before {
     content: "";
     display: inline-block;
@@ -168,7 +161,6 @@ footer a {
     background-size: contain;
 }
 
-/*Add logos to links down below*/
 .logo-spoonacular::before {
     content: "";
     display: inline-block;
