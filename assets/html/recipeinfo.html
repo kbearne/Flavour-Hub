@@ -18,7 +18,7 @@
 <body>
     <!-- Header / Navigation section -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,36 +54,17 @@
             <h2>Steps:</h2>
             <ul id="steps-list"></ul>
         </div>
-    </div>
+        <div id="nutritional-info-container"></div>
     </div>
 
-        <!-- Footer / Contact section -->
-        <footer class="contact">
-            <section id="footerItems">
-                <ul>
-                    <li>
-                        <!-- Button opens email client and auto generates the email title -->
-                        <a class="btn btn-dark"
-                            href="mailto:flavour-hub@gmail.com?subject=I%20would%20like%20to%20contact%20you%20about%20your%20website"
-                            target="_blank" role="button">Email us</a>
-                    </li>
-                    <li>
-                        <!-- Link to my GitHub -->
-                        <a href="https://github.com/kbearne/Flavour-Hub" target="_blank" class="logo-github">GitHub</a>
-                    </li>
-                    <li>
-                        <!-- Link to my GitHub -->
-                        <a href="https://spoonacular.com/food-api" target="_blank" class="logo-spoonacular">Spoonacular
-                            API</a>
-                    </li>
-                    <li>
-                        <!-- Link to my GitHub -->
-                        <a href="https://developer.edamam.com/food-database-api" target="_blank" class="logo-edamam">Edamam
-                            API</a>
-                    </li>
-                </ul>
-            </section>
-        </footer>
+
+    <!-- Display detailed recipe information (dynamically populated via JavaScript) -->
+    <div class="container-fluid">
+        <div id="recipe-container">
+            <div id="nutritional-info-container"></div>
+        </div>
+    </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
