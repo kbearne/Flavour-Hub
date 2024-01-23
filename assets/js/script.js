@@ -9,7 +9,6 @@ const formButton = document.querySelector('.btn-outline-success');
 // search history local storage on browser 
 let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
-const searchHis = ("search-history-list");
 
 // // event listener for when user clicks a recipe picture
 //     // API call to Spoonacular which pulls the associated recipe information based on item title
