@@ -4,10 +4,10 @@ const recipesContainer = document.getElementById('recipes-container');
 // search bar
 const searchBar = document.querySelector('.form-control.mr-sm-2');
 
+const formButton = document.querySelector('.btn-outline-success');
 
 // search history local storage on browser 
 let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
-
 
 
 // // event listener for when user clicks a recipe picture
@@ -37,11 +37,24 @@ searchBar.addEventListener('keydown', function (event) {
             return;
         }
 
-        console.log(searchQuery);
-
-        // call update search history function
+        // call updateSearchHstory & getRecipeInformation function
+        getRecipeInformation(searchQuery);
         updateSearchHistory(searchQuery);
     };
+});
+
+// button click event
+formButton.addEventListener('click', function (e) {
+
+    let searchQuery = searchBar.value;
+// check that the entered value isn't blank
+    if (searchQuery.trim() === "") {
+        alert("Value can't be blank, please enter something to search for!");
+        return;
+    };
+// call updateSearchHstory & getRecipeInformation function
+    getRecipeInformation(searchQuery);
+    updateSearchHistory(searchQuery);
 });
 
 
@@ -53,30 +66,30 @@ function updateSearchHistory(searchQuery) {
     localStorage.setItem('searchHistory', JSON.stringify(localStorageArray));
 
     // refresh search history
-    loadSearchHistory();
+    // loadSearchHistory();
 };
 
-// NEED TO ADD CLASS TO HTML 
+// CLASS/ID TO HTML?
 // load the search history from local storage
 
+// function loadSearchHistory() {
+//     localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
-function loadSearchHistory() {
-    localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
+//     // search history on browser
+//     // IF THERE IS A HISTORY _ DO THIS ACTION //// IF SERACH HISTORY LIST IS BLANK _ BREAK////ALWAYS REQUIRE ONE SEARCH HISTORY TERM 
+//     const historyList = document.getElementById('search-history-list');
+//     console.log(historyList);
+//     historyList.innerHTML = "";
 
-    // search history on browser
-    // IF THERE IS A HISTORY _ DO THIS ACTION //// IF SERACH HISTORY LIST IS BLANK _ BREAK////ALWAYS REQUIRE ONE SEARCH HISTORY TERM 
-    const historyList = document.getElementById('search-history-list');
-    historyList.innerHTML = "";
+//     // localStorageArray.forEach(function (term) {
+//     //     const listItem = document.createElement('li');
+//     //     listItem.textContent = term;
+//     //     historyList.appendChild(listItem);
+//     // });
 
-    localStorageArray.forEach(function (term) {
-        const listItem = document.createElement('li');
-        listItem.textContent = term;
-        historyList.appendChild(listItem);
-    });
-
-    // Dropdown 
-    populateDropdown();
-}
+//     // Dropdown 
+//     populateDropdown();
+// }
 
 
 // autopopulate dropdown with previous search history which is clickable (makes API calls to Spoonacular)
@@ -100,7 +113,7 @@ function populateDropdown() {
 
 // API call to Spoonacular which pulls associated recipe information based on user input
 function getRecipeInformation(searchQuery) {
-    const apiKey = "c2e2b5d0cebd4e64b88e6bfcaa201518";
+    const apiKey = "96faea5d367c46cca860945a0cac4e30";
     const endpoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
 
     fetch(endpoint)
@@ -119,7 +132,7 @@ function getRecipeInformation(searchQuery) {
 // item name, calories, total weight, diet labels
 function populateRecipeInformation() {
     // API credentials
-    const apiKey = "c2e2b5d0cebd4e64b88e6bfcaa201518";
+    const apiKey = "96faea5d367c46cca860945a0cac4e30";
     // NEEDS CHANGING TO SEARCH BAR INPUT / LOCAL STORAGE ITEMS
     const searchQuery = "bread";
 
