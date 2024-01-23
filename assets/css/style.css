@@ -87,12 +87,13 @@ h2 {
 }
 
 #ingredients-list {
-
+/* TODO: add styling for the ingredients section*/
 }
 
 #steps-list {
-
+/* TODO: add styling for the steps section */
 }
+
 /* Navigation styling */
 nav a:hover {
     background-color: var(--lightgreen);
