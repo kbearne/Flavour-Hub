@@ -9,6 +9,9 @@ const formButton = document.querySelector('.btn-outline-success');
 // search history local storage on browser 
 let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
+// Spoonacular API key
+const apiKey = "96faea5d367c46cca860945a0cac4e30";
+
 
 // // event listener for when user clicks a recipe picture
 //     // API call to Spoonacular which pulls the associated recipe information based on item title
@@ -42,7 +45,7 @@ searchBar.addEventListener('keydown', function (event) {
         updateSearchHistory(searchQuery);
     };
 });
-
+/*
 // button click event
 formButton.addEventListener('click', function (e) {
 
@@ -55,7 +58,7 @@ formButton.addEventListener('click', function (e) {
 // call updateSearchHstory & getRecipeInformation function
     getRecipeInformation(searchQuery);
     updateSearchHistory(searchQuery);
-});
+});*/
 
 
 // update search history (utilising local storage)
@@ -113,7 +116,6 @@ function populateDropdown() {
 
 // API call to Spoonacular which pulls associated recipe information based on user input
 function getRecipeInformation(searchQuery) {
-    const apiKey = "96faea5d367c46cca860945a0cac4e30";
     const endpoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
 
     fetch(endpoint)
@@ -131,8 +133,6 @@ function getRecipeInformation(searchQuery) {
 
 // item name, calories, total weight, diet labels
 function populateRecipeInformation() {
-    // API credentials
-    const apiKey = "96faea5d367c46cca860945a0cac4e30";
     // NEEDS CHANGING TO SEARCH BAR INPUT / LOCAL STORAGE ITEMS
     const searchQuery = "bread";
 
@@ -258,4 +258,4 @@ function getNutritionalInformation(ingredient) {
 };
 
 // successful test call to Edamam API
-getNutritionalInformation("egg");
+getNutritionalInformation("bread");
