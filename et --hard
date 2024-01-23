@@ -1,0 +1,375 @@
+[33mcommit 8f62b0399ff9113827df798c06ad2d471c134389[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Tue Jan 23 20:58:38 2024 +0000
+
+    commiting
+
+[33mcommit a9c2b987e2c4d64ec1a21b4db81dc03cb5dc0f37[m[33m ([m[1;32mfeature/minor-changes-kb[m[33m)[m
+Merge: b815796 911cf2e
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Tue Jan 23 20:02:53 2024 +0000
+
+    Merge pull request #49 from kbearne/feauture/localstoragehistory
+    
+    Updated JS error
+
+[33mcommit 911cf2ed2edc8909a782de5999f7e5526613b549[m
+Author: dami-ani <147883868+dami-ani@users.noreply.github.com>
+Date:   Tue Jan 23 20:01:29 2024 +0000
+
+    Updated JS error
+
+[33mcommit b815796c1c8895a46d5a324d2a05f01a94a21074[m
+Merge: a426244 aa5d9d4
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Tue Jan 23 19:55:27 2024 +0000
+
+    Merge pull request #48 from kbearne/feauture/localstoragehistory
+    
+    Updated JS
+
+[33mcommit aa5d9d4786227dd7d3794aea358bf54d04fe15be[m
+Author: dami-ani <147883868+dami-ani@users.noreply.github.com>
+Date:   Tue Jan 23 19:52:27 2024 +0000
+
+    Updated JS
+
+[33mcommit a426244aa3fcc6d7a43ebcae89ad3e3eeb48dd15[m
+Merge: e756d19 9d69e21
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Tue Jan 23 19:30:32 2024 +0000
+
+    Merge pull request #47 from kbearne/feature/edamam-api-nutrional-output
+    
+    outputting edamam api info
+
+[33mcommit 9d69e218d94a31822ab038fba6a1f0d0d7b545e7[m[33m ([m[1;31morigin/feature/edamam-api-nutrional-output[m[33m, [m[1;32mfeature/edamam-api-nutrional-output[m[33m)[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Tue Jan 23 19:29:13 2024 +0000
+
+    outputting edamam api info
+
+[33mcommit e756d19731b878b219de8fe22c98baa45b9bb28d[m
+Merge: 58fbc65 0b22c66
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Tue Jan 23 19:27:04 2024 +0000
+
+    Merge pull request #46 from kbearne/feature/edamam-api-call
+    
+    Feature/edamam api call
+
+[33mcommit 0b22c666f8e71e2736d7574981dc26ded2f01f4f[m[33m ([m[1;31morigin/feature/edamam-api-call[m[33m, [m[1;32mfeature/edamam-api-call[m[33m)[m
+Merge: 050ae6d 58fbc65
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Mon Jan 22 19:50:16 2024 +0000
+
+    Merge branch 'main' of github.com:kbearne/Flavour-Hub
+
+[33mcommit 050ae6d70c46d198f9266459e5cd404afdc7c2d8[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Mon Jan 22 19:50:02 2024 +0000
+
+    minor change
+
+[33mcommit 58fbc65ef00799b153e207ff94f5e037edc2f36e[m
+Merge: 14f64cd 635a24e
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Mon Jan 22 19:48:19 2024 +0000
+
+    Merge pull request #42 from kbearne/html-css-styles-ida
+    
+    Html css styles
+
+[33mcommit 635a24eb520609cf931b5c80aea0e74c4c6e0d2c[m
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Mon Jan 22 19:38:06 2024 +0000
+
+    added padding and margins
+
+[33mcommit f238f9ea2466102a18ca58e58ffc038fbf000177[m
+Merge: f1422df 14f64cd
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Mon Jan 22 19:25:44 2024 +0000
+
+    Merge branch 'main' of https://github.com/kbearne/Flavour-Hub into html-css-styles-ida
+
+[33mcommit 14f64cda0b6530d3bdbf98ef057190c6240b15e7[m
+Merge: 66e6d1c 4271e95
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Mon Jan 22 19:22:44 2024 +0000
+
+    Merge pull request #41 from kbearne/feauture/localstoragehistory
+    
+    Updated JS with local storage
+
+[33mcommit f1422df9961762462a717c3952723d2f7aa8dfef[m
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Mon Jan 22 19:22:37 2024 +0000
+
+    added logos and padding
+
+[33mcommit 4271e955dcbe269e2fcf7aef4a3b2599c50044d1[m
+Author: dami-ani <147883868+dami-ani@users.noreply.github.com>
+Date:   Mon Jan 22 19:17:29 2024 +0000
+
+    Updated JS with local storage
+
+[33mcommit 66e6d1c4810a7a984e3c82673a037efd4d068460[m
+Merge: 59904be d85e85d
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Mon Jan 22 19:11:11 2024 +0000
+
+    Merge pull request #40 from kbearne/feature/recipes-detailed-info-output
+    
+    completed function to output detailed recipes info to HTML page
+
+[33mcommit d85e85db0534c340eb1a5f0c2baa9a51e2ffdf1c[m[33m ([m[1;31morigin/feature/recipes-detailed-info-output[m[33m, [m[1;32mfeature/recipes-detailed-info-output[m[33m)[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Mon Jan 22 19:08:25 2024 +0000
+
+    completed function
+
+[33mcommit 59904bed1afa05772ab0243c60da6b449b3d982d[m
+Merge: 9489aa2 227ab14
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Mon Jan 22 18:45:14 2024 +0000
+
+    Merge pull request #39 from kbearne/feature/output-detailed-recipes-info
+    
+    Merge pull request #38 from kbearne/main
+
+[33mcommit 227ab146a56f1d5aa225cf282d4ff7b2a2e2894c[m
+Merge: a2bc4e5 9489aa2
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Mon Jan 22 18:41:16 2024 +0000
+
+    Merge pull request #38 from kbearne/main
+    
+    finished output of detailed recipes info
+
+[33mcommit 9489aa2d8a643a9f3891a1331a0cf58c6b8758ad[m
+Merge: 06b22f1 a2bc4e5
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Sat Jan 20 18:56:31 2024 +0000
+
+    Merge pull request #37 from kbearne/feature/output-detailed-recipes-info
+    
+    working on outputting detailed recipes info - added new JS and HTML files..
+
+[33mcommit a2bc4e597e16c0f7470b68e0f70203a33edb3ca1[m[33m ([m[1;31morigin/feature/output-detailed-recipes-info[m[33m, [m[1;32mfeature/output-detailed-recipes-info[m[33m)[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Sat Jan 20 18:54:35 2024 +0000
+
+    working on outputting detailed recipes info - added new JS and HTML files associated with this and amended functions
+
+[33mcommit 06b22f1235b0646bdd69c2030613d8b01c90ac90[m
+Merge: ba8e8a5 35d9e28
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Sat Jan 20 18:51:29 2024 +0000
+
+    Merge pull request #36 from kbearne/css-html-styling
+    
+    changes to main banner
+
+[33mcommit 35d9e282be408476ca9b02b860a4e000a04858d6[m
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Sat Jan 20 18:47:19 2024 +0000
+
+    changes to main banner
+
+[33mcommit ba8e8a541b1ada040d2c471da0eacfc0d5162807[m
+Merge: d2fe50d 2c258b4
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Sat Jan 20 18:03:33 2024 +0000
+
+    Merge pull request #35 from kbearne/css-html-styling
+    
+    Css html styling
+
+[33mcommit 2c258b4637641dda82e863feb6424e00eb4e4e82[m
+Merge: cdeb01b d2fe50d
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Sat Jan 20 17:59:34 2024 +0000
+
+    Merge branch 'main' of https://github.com/kbearne/Flavour-Hub into css-html-styling
+
+[33mcommit cdeb01b6bf5715bf2504f2e8f50566ac9c8a652f[m
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Sat Jan 20 17:59:16 2024 +0000
+
+    changes to main banner, images and css styles
+
+[33mcommit d2fe50dda84b7092c37753b333ff6e0f5985dcc4[m
+Merge: 82f4270 db635d5
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Sat Jan 20 17:58:04 2024 +0000
+
+    Merge pull request #34 from kbearne/feature/output-recipes
+    
+    worked on getRecipeInformation and populateRecipeInformation functions
+
+[33mcommit db635d5284ac813c3f419f0221aeb4e8921779c9[m[33m ([m[1;31morigin/feature/output-recipes[m[33m)[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Sat Jan 20 17:54:55 2024 +0000
+
+    worked on getRecipeInformation and populateRecipeInformation functions (JS) - successfully outputs to dynamically created Bootstrap cards on the page
+
+[33mcommit 82f427016b335808a94adfb5d9b9e3adbb2b8a73[m
+Merge: fc0e3b7 3d8c3ed
+Author: Ida Reis <115897379+idareis@users.noreply.github.com>
+Date:   Sat Jan 20 16:29:03 2024 +0000
+
+    Merge pull request #33 from kbearne/feature/html-css-starter-code
+    
+    new starter code for CSS, HTML and Bootstrap layout
+
+[33mcommit 3d8c3ed94895e37f6ca94275254a5343cd46b402[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Sat Jan 20 16:26:07 2024 +0000
+
+    new starter code for CSS, HTML and Bootstrap layout
+
+[33mcommit fc0e3b76ddd80f9aaa94bf8d38094d1229fe6760[m
+Merge: 82e2c64 c97e455
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Fri Jan 19 19:39:02 2024 +0000
+
+    Merge pull request #31 from kbearne/feature/localstorage
+    
+    Updated JS
+
+[33mcommit 82e2c6425991356187894f300fc01e3ede307f5d[m
+Merge: 3ca8579 da0467e
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Fri Jan 19 19:36:36 2024 +0000
+
+    Merge pull request #30 from kbearne/feature/part1
+    
+    changes to html navbar
+
+[33mcommit c97e4555cb8d0b620000b68015af0d3c440efc49[m
+Author: dami-ani <147883868+dami-ani@users.noreply.github.com>
+Date:   Fri Jan 19 19:35:11 2024 +0000
+
+    Updated JS
+
+[33mcommit da0467ea439fcc275f3c3450aff3c05e8143e0da[m
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Fri Jan 19 19:16:15 2024 +0000
+
+    changes to html navbar
+
+[33mcommit 3ca857962b97aae061244a43b6a7fcf677da4d81[m
+Merge: d348231 2f9005f
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Fri Jan 19 19:04:30 2024 +0000
+
+    Merge pull request #29 from kbearne/feature/readme
+    
+    populated README
+
+[33mcommit 2f9005f87f232a7036c676409817a93b8c011ab3[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Fri Jan 19 19:02:09 2024 +0000
+
+    populated README
+
+[33mcommit d34823128be7befa5d3747dda0e16dcc6f926805[m
+Merge: 33ea8ce 588dd7e
+Author: Temiakindele <150183278+Temiakindele@users.noreply.github.com>
+Date:   Fri Jan 19 18:57:53 2024 +0000
+
+    Merge pull request #28 from kbearne/feature/part1
+    
+    adding css and bootstrap styling to html
+
+[33mcommit 588dd7e27ef73c790976ab612be865583b2bbe7d[m
+Author: Ida <i.jaqueline.reis@gmail.com>
+Date:   Fri Jan 19 18:39:04 2024 +0000
+
+    adding css and bootstrap styling to html
+
+[33mcommit 33ea8ce092b92453786b2aeca400b359915bf023[m
+Merge: cb5dd21 a7fabe4
+Author: Ida Reis <115897379+idareis@users.noreply.github.com>
+Date:   Fri Jan 19 18:35:46 2024 +0000
+
+    Merge pull request #26 from kbearne/temihtml
+    
+    updated the bootstrap layout
+
+[33mcommit a7fabe44b0e9030eb53086eb45ff9fa14a1e9e72[m
+Author: Temi Akindele <temiakindele@Temis-MacBook-Pro.local>
+Date:   Fri Jan 19 18:25:21 2024 +0000
+
+    updated the bootstrap layout
+
+[33mcommit cb5dd21043abdea675b56ec600ae244c72b5a445[m
+Merge: 4f562e3 1758af0
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Fri Jan 19 09:17:05 2024 +0000
+
+    Merge pull request #23 from kbearne/kbearne-patch-1
+    
+    Create README.md
+
+[33mcommit 1758af05d0490cfd087f00fe1bb7c3cc4b5a4489[m
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Thu Jan 18 21:08:32 2024 +0000
+
+    Create README.md
+
+[33mcommit 4f562e3e5adb7549d4e9873364ebf5e11a51f4ad[m
+Merge: eb9fcae a855c95
+Author: Dami <147883868+dami-ani@users.noreply.github.com>
+Date:   Thu Jan 18 20:49:07 2024 +0000
+
+    Merge pull request #22 from kbearne/feature/pseudocode
+    
+    Feature/pseudocode
+
+[33mcommit a855c950b81081d186910e530645ef32de16a8f8[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Thu Jan 18 21:44:56 2024 +0100
+
+    worked on script.js file, pseudocode and API call
+
+[33mcommit 588a37af5c7b88b8d70bbfff9eecaa590fb24004[m
+Merge: 8157e9b eb9fcae
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Thu Jan 18 20:18:04 2024 +0100
+
+    resolved merge conflict in index.html
+
+[33mcommit eb9fcae9e7bb060e20152b138786415ba5bbe9e1[m
+Merge: 3c49858 1d80a37
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Thu Jan 18 19:09:23 2024 +0000
+
+    Merge pull request #14 from kbearne/temihtml
+    
+    started bootstrap html structure
+
+[33mcommit 1d80a37e477b7fd1ad11afeebcf5df5d64d07938[m
+Author: Temi Akindele <temiakindele@Temis-MacBook-Pro.local>
+Date:   Thu Jan 18 18:59:46 2024 +0000
+
+    started bootstrap html structure
+
+[33mcommit 8157e9b3291127a131b650d9216caa32eb4330ac[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Wed Jan 17 19:46:27 2024 +0100
+
+    removed duplicate stylesheet ref
+
+[33mcommit 3c49858887848b8068cb3c68e80ca500aa36cd46[m
+Author: Kelly <{ID}+{username}@users.noreply.github.com>
+Date:   Wed Jan 17 19:22:29 2024 +0100
+
+    skeleton structure built
+
+[33mcommit 8b5fb972b51f3886e29dc4339014b6345706a42e[m
+Author: Kelly <kbearne@users.noreply.github.com>
+Date:   Wed Jan 17 18:16:32 2024 +0000
+
+    Initial commit
