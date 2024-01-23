@@ -44,6 +44,7 @@ searchBar.addEventListener('keydown', function (event) {
     };
 });
 
+/*
 // button click event
 formButton.addEventListener('click', function (e) {
 
@@ -56,7 +57,7 @@ formButton.addEventListener('click', function (e) {
 // call updateSearchHstory & getRecipeInformation function
     getRecipeInformation(searchQuery);
     updateSearchHistory(searchQuery);
-});
+});*/
 
 
 // update search history (utilising local storage)
