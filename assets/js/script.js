@@ -9,7 +9,6 @@ const formButton = document.querySelector('.btn-outline-success');
 // search history local storage on browser 
 let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
-const searchHis = ("search-history-list");
 
 // // event listener for when user clicks a recipe picture
 //     // API call to Spoonacular which pulls the associated recipe information based on item title
@@ -186,10 +185,13 @@ function displayRecipeInfo(recipes) {
         // Create the button elements
         const button = document.createElement('a');
         button.href = `recipeinfo.html?id=${recipe.id}`;
-        button.className = 'btn btn-primary';
+        button.className = 'btn';
         button.target = '_blank';
         button.textContent = 'View recipe details';
         button.dataset.recipeId = recipe.id;
+
+        button.style.backgroundColor = '#386641';
+        button.style.color = '#F2E8CF';
 
         // Append all elements
         cardBody.appendChild(title);
