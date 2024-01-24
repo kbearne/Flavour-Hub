@@ -28,7 +28,7 @@ p {
 
 /* Link styling */
 a {
-    color: white;
+    color: var(--darkgreen);
     text-decoration: none;
 }
 
@@ -51,6 +51,13 @@ h2 {
     font-size: 35px;
     margin: 0px 0px;
     color: var(--green);
+}
+
+h3 {
+    font-size: 25px;
+    text-shadow: 1px 1px #c9d2c4;
+    color: var(--darkgreen);
+    margin: 10px;
 }
 
 /*header styling*/
@@ -83,16 +90,41 @@ h2 {
 #recipes {
     text-align: center;
     padding: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-#ingredients-list {
+#recipe-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--darkgreen);
+}
 
+#recipe-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 25px;
+}
+
+#recipe-summary > a:hover {
+    color: var(--brickred);
+}
+
+#ingredients-list {
+    grid: flex;
+    justify-content: space-evenly;
 }
 
 #steps-list {
-
+    text-align: left;
+    
 }
+
 /* Navigation styling */
 nav a:hover {
     background-color: var(--lightgreen);
