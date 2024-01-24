@@ -93,15 +93,14 @@ function populateDropdown() {
 
 // API call to Spoonacular which pulls associated recipe information based on user input
 function getRecipeInformation(searchQuery) {
-    const apiKey = "96faea5d367c46cca860945a0cac4e30";
+    const apiKey = "b32514af725f4a3d93e12188f7ffa536";
     const endpoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
 
     fetch(endpoint)
         .then(response => response.json())
         .then(data => {
             // Call a function to display the parsed data on the page
-            // displayRecipeInfo(data);
-            console.log(data);
+          
         })
         .catch(error => {
             console.error('Spoonacular API fetch operation has failed with the following error:', error);
@@ -115,7 +114,7 @@ function populateRecipeInformation(searchQuery) {
     recipesContainer.innerHTML = "";
 
     // API credentials
-    const apiKey = "96faea5d367c46cca860945a0cac4e30";
+    const apiKey = "b32514af725f4a3d93e12188f7ffa536";
 
     //query URL 
     const queryURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
@@ -128,7 +127,7 @@ function populateRecipeInformation(searchQuery) {
         // Pass API results to the displayRecipeInfo function
         .then(function (data) {
             displayRecipeInfo(data.results);
-            console.log(data.results);
+           
         })
         .catch(function (error) {
             console.error('API fetch operation has failed with the following error:', error);
@@ -235,8 +234,7 @@ function getNutritionalInformation(ingredient) {
         })
         .then(function (data) {
             // Call a function to display the parsed data on the page (NEED TO DECIDE CONTAINER IT DISPLAYS IN)
-            //displayProductInfo(data);
-            console.log(data);
+          
         })
         .catch(function (error) {
             console.error('API fetch operation has failed with the following error:', error);
