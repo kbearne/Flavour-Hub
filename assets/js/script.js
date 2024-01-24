@@ -100,7 +100,6 @@ function getRecipeInformation(searchQuery) {
         .then(response => response.json())
         .then(data => {
             // Call a function to display the parsed data on the page
-          
         })
         .catch(error => {
             console.error('Spoonacular API fetch operation has failed with the following error:', error);
@@ -127,7 +126,6 @@ function populateRecipeInformation(searchQuery) {
         // Pass API results to the displayRecipeInfo function
         .then(function (data) {
             displayRecipeInfo(data.results);
-           
         })
         .catch(function (error) {
             console.error('API fetch operation has failed with the following error:', error);
@@ -182,12 +180,11 @@ function displayRecipeInfo(recipes) {
         // Create the button elements
         const button = document.createElement('a');
         button.href = `recipeinfo.html?id=${recipe.id}`;
-        button.className = 'btn';
+        button.className = 'btn btn-primary';
         button.target = '_blank';
         button.textContent = 'View recipe details';
         button.dataset.recipeId = recipe.id;
-        button.style.backgroundColor = '#386641';
-        button.style.color = '#F2E8CF';
+
 
         // Append all elements
         cardBody.appendChild(title);
@@ -236,7 +233,7 @@ function getNutritionalInformation(ingredient) {
         })
         .then(function (data) {
             // Call a function to display the parsed data on the page (NEED TO DECIDE CONTAINER IT DISPLAYS IN)
-          
+
         })
         .catch(function (error) {
             console.error('API fetch operation has failed with the following error:', error);
