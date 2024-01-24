@@ -4,22 +4,11 @@ const recipesContainer = document.getElementById('recipes-container');
 // search bar
 const searchBar = document.querySelector('.form-control.mr-sm-2');
 
+// form button
 const formButton = document.querySelector('.btn-outline-success');
 
 // search history local storage on browser 
 let localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
-
-const searchHis = ("search-history-list");
-
-// // event listener for when user clicks a recipe picture
-//     // API call to Spoonacular which pulls the associated recipe information based on item title
-//     recipeImagesContainer.addEventListener('click', function(event) {
-//       if (event.target.classList.contains('recipe-image')) {
-//           const recipeTitle = event.target.dataset.recipeTitle;
-//           getRecipeInformation(recipeTitle);
-//       }
-//   });
-
 
 // event listener for user search (on enter key press)
 searchBar.addEventListener('keydown', function (event) {
@@ -41,21 +30,33 @@ searchBar.addEventListener('keydown', function (event) {
         // call updateSearchHstory & getRecipeInformation function
         getRecipeInformation(searchQuery);
         updateSearchHistory(searchQuery);
+
+        // pass searchQuery to populateRecipeInformation function
+        populateRecipeInformation(searchQuery);
     };
 });
 
-// button click event
-formButton.addEventListener('click', function (e) {
+// event listener for user search on click
+formButton.addEventListener('click', function (event) {
 
+    // suppress normal form behaviour
+    event.preventDefault();
+
+    // get user input (search query) and store it
     let searchQuery = searchBar.value;
-// check that the entered value isn't blank
+
+    // check that the entered value isn't blank
     if (searchQuery.trim() === "") {
         alert("Value can't be blank, please enter something to search for!");
         return;
     };
-// call updateSearchHstory & getRecipeInformation function
+
+    // call updateSearchHstory & getRecipeInformation function
     getRecipeInformation(searchQuery);
     updateSearchHistory(searchQuery);
+
+    // pass searchQuery to populateRecipeInformation function
+    populateRecipeInformation(searchQuery);
 });
 
 
@@ -70,28 +71,6 @@ function updateSearchHistory(searchQuery) {
     // loadSearchHistory();
 };
 
-// CLASS/ID TO HTML?
-// load the search history from local storage
-
-// function loadSearchHistory() {
-//     localStorageArray = JSON.parse(localStorage.getItem('searchHistory')) || [];
-
-//     // search history on browser
-//     // IF THERE IS A HISTORY _ DO THIS ACTION //// IF SERACH HISTORY LIST IS BLANK _ BREAK////ALWAYS REQUIRE ONE SEARCH HISTORY TERM 
-//     const historyList = document.getElementById('search-history-list');
-//     console.log(historyList);
-//     historyList.innerHTML = "";
-
-//     // localStorageArray.forEach(function (term) {
-//     //     const listItem = document.createElement('li');
-//     //     listItem.textContent = term;
-//     //     historyList.appendChild(listItem);
-//     // });
-
-//     // Dropdown 
-//     populateDropdown();
-// }
-
 
 // autopopulate dropdown with previous search history which is clickable (makes API calls to Spoonacular)
 function populateDropdown() {
@@ -103,7 +82,7 @@ function populateDropdown() {
         option.text = term;
         dropdown.add(option);
 
-        // Adding event listener to each option for API call on click
+        // event listener added to each option for API call on click
         option.addEventListener('click', function () {
             const selectedTerm = option.text;
             getRecipeInformation(selectedTerm);
@@ -131,12 +110,14 @@ function getRecipeInformation(searchQuery) {
 
 
 // item name, calories, total weight, diet labels
-function populateRecipeInformation() {
+function populateRecipeInformation(searchQuery) {
+
+    recipesContainer.innerHTML = "";
+
     // API credentials
     const apiKey = "96faea5d367c46cca860945a0cac4e30";
-    // NEEDS CHANGING TO SEARCH BAR INPUT / LOCAL STORAGE ITEMS
-    const searchQuery = "bread";
 
+    //query URL 
     const queryURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
 
     // API fetch call
@@ -152,7 +133,24 @@ function populateRecipeInformation() {
         .catch(function (error) {
             console.error('API fetch operation has failed with the following error:', error);
         });
-};
+}
+
+// wait for the DOM content to be fully loaded before executing the code
+document.addEventListener('DOMContentLoaded', function () {
+
+    // display default pasta recipes on page load
+    const defaultSearchQuery = "pasta";
+
+    // call function to populate RecipeInformation based on the default SearchQuery
+    populateRecipeInformation(defaultSearchQuery);
+
+    // call function to update search history with the defaultSearchQuery
+    updateSearchHistory(defaultSearchQuery);
+
+    // the value of the search bar is set to the defaultSearchQuery
+    searchBar.value = defaultSearchQuery;
+});
+
 
 
 // Display recipe information on the page
@@ -218,19 +216,6 @@ recipesContainer.addEventListener('click', function (event) {
         window.open(`./assets/html/recipeinfo.html?id=${recipeId}`, '_blank');
     }
 });
-
-
-// event listener for when user selects a checkbox next to recipe ingredient for further nutritional information
-// needs to call getNutritionalInformation function
-// checkboxesContainer.addEventListener('change', function(event) {
-//   if (event.target.type === 'checkbox') {
-//       const ingredientName = event.target.dataset.ingredientName;
-//       if (event.target.checked) {
-//           getNutritionalInformation(ingredientName);
-//       }
-//   }
-// });
-
 
 // Edamam API call which pulls associated nutritional information for the selected recipe ingredient
 // item name, calories, total weight, diet labels
