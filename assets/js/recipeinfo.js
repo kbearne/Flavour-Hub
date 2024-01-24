@@ -6,7 +6,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const recipeId = urlParams.get('id');
 
 // API key
-const apiKey = "96faea5d367c46cca860945a0cac4e30";
+const apiKey = "b32514af725f4a3d93e12188f7ffa536";
 
 // Get detailed recipe information using the recipe ID
 fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${apiKey}`)
