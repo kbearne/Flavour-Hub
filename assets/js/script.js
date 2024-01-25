@@ -93,7 +93,7 @@ function populateDropdown() {
 
 // API call to Spoonacular which pulls associated recipe information based on user input
 function getRecipeInformation(searchQuery) {
-    const apiKey = "b32514af725f4a3d93e12188f7ffa536";
+    const apiKey = "c89f717b9aa14141bc82aaf86a6be6ca";
     const endpoint = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
 
     fetch(endpoint)
@@ -113,7 +113,7 @@ function populateRecipeInformation(searchQuery) {
     recipesContainer.innerHTML = "";
 
     // API credentials
-    const apiKey = "b32514af725f4a3d93e12188f7ffa536";
+    const apiKey = "c89f717b9aa14141bc82aaf86a6be6ca";
 
     //query URL 
     const queryURL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${searchQuery}`;
